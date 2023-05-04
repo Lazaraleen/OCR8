@@ -1,0 +1,29 @@
+.mainhome {
+    width: 95%;
+    margin: 0 auto;
+    color: var(--main);
+}
+
+.miseenavant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.falaise {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(70%);
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    font-weight: 500;
+}
