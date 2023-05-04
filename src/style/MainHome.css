@@ -27,3 +27,27 @@ h1 {
     position: absolute;
     font-weight: 500;
 }
+
+.locations {
+    display: grid;
+	column-gap: 10px;
+	grid-template-columns: auto auto auto;
+    background-color: var(--secondary);
+    border-radius: 25px;
+    padding: 50px;
+}
+
+.locate {
+    width: 340px;
+    height: 340px;
+    background: linear-gradient(180deg, var(--main) 0%, rgba(100, 37, 37) 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.locate p {
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+}
