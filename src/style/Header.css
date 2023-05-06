@@ -4,7 +4,6 @@
     width: 95%;
     margin: 0 auto;
     padding-top: 40px;
-    padding-bottom: 63px;
     color: var(--main);
 }
 
@@ -20,6 +19,6 @@
     font-size: 24px;
 }
 
-li {
+ul a {
     text-decoration: none;
 }

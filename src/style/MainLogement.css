@@ -1,0 +1,89 @@
+.mainlogement {
+    width: 95%;
+    margin: 0 auto;
+    color: var(--main);
+}
+
+.miseenavant {
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.miseenavant img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.article1 {
+    width: 70%;
+}
+
+.article2 {
+    width: 30%;
+}
+
+article h2 {
+    font-size: 36px;
+    padding-bottom: 0px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.filtre {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.filtre div {
+    width: 115px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main);
+    border-radius: 10px;
+    padding: 3px 0;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+span div{
+    margin-left: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.circle {
+    background-color: #C4C4C4;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}
+
+.star {
+    margin-top: 30px;
+}
+
+.star img {
+    margin-left: 15px;
+}

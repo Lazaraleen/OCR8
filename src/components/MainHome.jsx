@@ -1,5 +1,9 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
 import falaise from '../assets/images/Falaise.png';
+import anonyme from '../assets/images/anonyme.jpg';
 import '../style/MainHome.css';
+
 
 function MiseEnAvant() {
     return (
@@ -11,13 +15,25 @@ function MiseEnAvant() {
 }
 
 function Location() {
+    const lieux = [
+        { id: 1, titre: "Titre de la location", image: anonyme},
+        { id: 2, titre: "Titre de la location", image: anonyme},
+        { id: 3, titre: "Titre de la location", image: anonyme},
+        { id: 4, titre: "Titre de la location", image: anonyme},
+        { id: 5, titre: "Titre de la location", image: anonyme},
+        { id: 6, titre: "Titre de la location", image: anonyme},
+    ];
+
     return (
         <div className='locations'>
-            <div className="locate">
-                <p>Titre de la location</p>
-            </div>
+            {lieux.map((lieu) => {
+                return (<div className="locate">
+                            <NavLink to="/fiche"><img src={lieu.image}></img></NavLink>                            
+                            <p>{lieu.titre}</p>
+                        </div> );
+            })}            
         </div>
-    )
+    );
 }
 
 function MainHome() {
