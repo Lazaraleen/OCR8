@@ -1,12 +1,28 @@
 import React from "react";
-import Header from '../../components/Header';
-import Main404 from '../../components/Main404';
+import '../../style/Main404.css';
 
-const Page404 = () => {
+function Message() {
     return (
-        <div>
-            <Header />
-            <Main404 />
+        <div className='erreur'>
+            <h6>404</h6>
+            <h2>Oups! La page que vous demandez n'existe pas.</h2>
+        </div>
+    )
+}
+
+function Lien() {
+    return (
+        <div className='lien'>
+            <a href='./Home.js'>Retourner sur la page d’accueil</a>
+        </div>
+    )
+}
+
+function Page404() {
+    return (
+        <div className='mainhome'>
+            <Message />
+            <Lien />
         </div>
     )
 }

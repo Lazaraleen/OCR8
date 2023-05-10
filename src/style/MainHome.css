@@ -10,8 +10,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 45px;
-    padding-top: 63px;
+    padding-top: 20px;
+}
+
+.marge {
+    margin-top: 60px;
 }
 
 .falaise {
@@ -37,25 +40,24 @@ h1 {
     background-color: var(--secondary);
     border-radius: 25px;
     padding: 50px;
+    margin-top: 40px;
 }
 
 .locate {
     width: 340px;
     height: 340px;
-    /* background: linear-gradient(180deg, var(--main) 0%, rgba(100, 37, 37) 100%);
-    border-radius: 10px; */
     margin-bottom: 50px;
     position: relative;
 }
 
 .locate a {
     display: flex;
-    /* align-items: flex-end; */
     position: relative;
 }
 
 .locate img {
-    object-fit: contain;
+    object-fit: cover;
+    height: 340px;
     width: 100%;
     border-radius: 10px;
     position: absolute;
@@ -66,7 +68,6 @@ h1 {
     padding-left: 20px;
     position: absolute;
     z-index: 2;
-    width: 40%;
     bottom: 20px;
     left: 0px;
 }

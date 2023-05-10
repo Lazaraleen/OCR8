@@ -5,17 +5,23 @@ import Home from './assets/pages/Home';
 import About from './assets/pages/About';
 import FicheLogement from './assets/pages/FicheLogement';
 import Page404 from './assets/pages/Page404';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/fiche' element={<FicheLogement />} />
-            {/* path "*" fonctionne si l'url ne correspond à rien de déclaré au-dessus */}
-            <Route path='*' element={<Page404 />} />
-        </Routes>
+      <Header />
+      <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/fiche/:id' element={<FicheLogement />} />
+          {/* <Route path='/fiche/*' element={<Page404 />} />     Un soucis pour cette route */}
+          {/* path "*" fonctionne si l'url ne correspond à rien de déclaré au-dessus */}
+          <Route path='/*' element={<Page404 />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -7,11 +7,34 @@
 .miseenavant {
     padding-top: 20px;
     margin-bottom: 0;
+    position:relative;
 }
 
-.miseenavant img {
+.arrow {
+    position:absolute;
+}
+
+.arrow_left {
+	left: 20px;
+    top: 40%;
+}
+
+.arrow_right {
+	right: 20px;
+    top: 40%;
+}
+
+.counter {
+	position: absolute;
+	bottom: 30px;
+    color: white;
+}
+
+.lieu1 {
     width: 100%;
     border-radius: 25px;
+    height: 415px;
+    object-fit: cover;
 }
 
 section{
@@ -20,18 +43,18 @@ section{
     margin-top: 30px;
 }
 
-.article1 {
+.section1 .article1 {
     width: 70%;
 }
 
-.article2 {
+.section1 .article2 {
     width: 30%;
 }
 
 article h2 {
     font-size: 36px;
     padding-bottom: 0px;
-    font-weight: normal;
+    font-weight: 500;
     padding-bottom: 10px;
     margin: 0;
 }
@@ -47,12 +70,13 @@ article h2 {
 }
 
 .filtre div {
-    width: 115px;
+    min-width: 115px;
     display: flex;
     justify-content: center;
     background-color: var(--main);
+    font-weight: 500;
     border-radius: 10px;
-    padding: 3px 0;
+    padding: 3px 10px;
     margin-top: 20px;
     margin-bottom: 24px;
 }
@@ -73,11 +97,11 @@ span div{
     justify-content: space-evenly;
 }
 
-.circle {
-    background-color: #C4C4C4;
+.avatar {
     height: 64px;
     width: 64px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .star {
@@ -86,4 +110,58 @@ span div{
 
 .star img {
     margin-left: 15px;
+}
+
+.section2 {
+    justify-content: space-between;
+}
+
+.section2 article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 45%;
+    position: relative;
+}
+
+.section2 article span {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main);
+    border-radius: 10px;
+    height: 52px;
+    color: white;
+    position: absolute;
+}
+
+.section2 article span p {
+    padding-left: 20px;
+}
+
+.section2 span img {
+    transform: rotate(90deg);
+    padding-top: 40px;
+    height: 24px;
+}
+
+.section2 article div {
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.section2 article div p {
+    padding: 20px;
+    font-weight: 400;
+}
+
+.section2 article div:nth-child(2) p {
+    padding: 0 20px;
+    font-weight: 400;
 }
