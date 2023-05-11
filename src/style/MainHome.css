@@ -13,11 +13,8 @@
     padding-top: 20px;
 }
 
-.marge {
-    margin-top: 60px;
-}
-
 .falaise {
+    margin-top: 60px;
     height: 225px;
     width: 100%;
     object-fit: cover;

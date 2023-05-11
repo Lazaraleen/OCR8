@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom';
 import RatingStars from "../../components/RatingStar";
 import flecheD from '../images/rightArrow.png';
 import flecheG from '../images/leftArrow.png';
-// import staractive from '../images/star-active.png';
-// import starinactive from '../images/star-inactive.png';
 import Logement from '../../logements.json';
 import '../../style/MainLogement.css';
 
@@ -53,14 +51,6 @@ function SectionLogement1() {
                     </div>
                     <div><img src={destination[0].host.picture} className="avatar" alt="avatar" /></div>
                 </span>
-                {/* Il faut voir comment je peux mettre le bon nombre d'étoiles colorées suivant le rating */}
-                {/* <span className="star">
-                    <img src={staractive} alt="star" />
-                    <img src={staractive} alt="star" />
-                    <img src={staractive} alt="star" />
-                    <img src={starinactive} alt="star" />
-                    <img src={starinactive} alt="star" />
-                </span>                 */}
                 <RatingStars props={destination[0].rating} />
             </article>
         </section>
@@ -71,7 +61,7 @@ function SectionLogement2() {
     const {id} = useParams()
     const destination = Logement.filter((lieu) => lieu.id === id);
     const equipement = destination[0].equipments;
-
+    // Prévoir de faire un component Collapse
     return (
         <section className="section2">
             <article>

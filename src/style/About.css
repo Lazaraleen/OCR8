@@ -1,0 +1,84 @@
+.mainAbout {
+    width: 95%;
+    margin: 0 auto;
+    color: var(--main);
+}
+
+.miseenavant {
+    padding-top: 20px;
+    margin-bottom: 0;
+    position:relative;
+}
+
+.lieu2 {
+    width: 100%;
+    border-radius: 25px;
+    height: 225px;
+    object-fit: cover;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sectionAbout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionAbout article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 85%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.sectionAbout article span {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main);
+    border-radius: 10px;
+    height: 52px;
+    color: white;
+    position: absolute;
+}
+
+.sectionAbout article span p {
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.sectionAbout span img {
+    transform: rotate(90deg);
+    padding-top: 40px;
+    height: 24px;
+}
+
+.sectionAbout article div {
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.sectionAbout article div p {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.sectionAbout article div:nth-child(2) p {
+    padding: 0 20px;
+    font-weight: 400;
+}
