@@ -23,7 +23,7 @@ function Location() {
 function Home() {
     return (
         <div className='mainhome'>
-            <MiseEnAvant image={falaise} namealt="falaise" />
+            <MiseEnAvant image={falaise} namealt="falaise" h1="Chez vous, partout et ailleurs" />
             <Location />
         </div>
     )

@@ -2,6 +2,7 @@
     width: 95%;
     margin: 0 auto;
     color: var(--main);
+    margin-top: 60px;
 }
 
 .miseenavant {
@@ -14,7 +15,6 @@
 }
 
 .falaise {
-    margin-top: 60px;
     height: 225px;
     width: 100%;
     object-fit: cover;
@@ -27,6 +27,7 @@ h1 {
     color: white;
     position: absolute;
     font-weight: normal;
+    margin: auto 0;
 }
 
 .locations {

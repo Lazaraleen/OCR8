@@ -18,7 +18,6 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/fiche/:id' element={<FicheLogement />} />
           {/* <Route path='/fiche/*' element={<Page404 />} />     Un soucis pour cette route */}
-          {/* path "*" fonctionne si l'url ne correspond à rien de déclaré au-dessus */}
           <Route path='/*' element={<Page404 />} />
       </Routes>
       <Footer />
