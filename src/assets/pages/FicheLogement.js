@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useParams } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
+// import { useEffect } from "react";
 import RatingStars from "../../components/RatingStar";
-import Slider from "../../components/Slider";
+import Slideshow  from "../../components/Slideshow ";
 import flecheD from '../images/rightArrow.png';
 import flecheG from '../images/leftArrow.png';
 import Logement from '../../logements.json';
@@ -9,18 +11,14 @@ import '../../style/MainLogement.css';
 
 
 function ImageLogement() {
-    const {id} = useParams()
+    const {id} = useParams();
+
     const destination = Logement.filter((lieu) => lieu.id === id);
     const nbPictures = destination[0].pictures.length;
 
     return (
         <div className='miseenavant'>
-            <Slider nbPictures={nbPictures} destination={destination[0]} />
-            {/* <img src={destination[0].pictures[0]} className="lieu1" alt="lieu1" />
-            {/* Faire avancer le compteur d'images et défiler les images en cliquant sur les flèches */}
-            {/* <div className="counter">1 / {nbPictures}</div>
-            <img src={flecheG} alt="flèche gauche" className="arrow arrow_left" />
-            <img src={flecheD} alt="flèche droite" className="arrow arrow_right" /> */} 
+            <Slideshow  nbPictures={nbPictures} destination={destination[0]} />
         </div>
     )
 }
@@ -40,7 +38,7 @@ function SectionLogement1() {
                     {tags.map((detail, index) => {
                         return (
                             <div>
-                                <p key={index}>{detail}</p>  
+                                <p key={index}>{detail}</p> 
                             </div>
                         )
                     })}

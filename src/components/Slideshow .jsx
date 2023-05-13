@@ -3,7 +3,7 @@ import { useState } from "react";
 import flecheD from '../assets/images/rightArrow.png';
 import flecheG from '../assets/images/leftArrow.png';
 
-function Slider(props) {
+function Slideshow (props) {
     const [index, setIndex] = useState(0);
     const goToPrevious = () => {
         const firstImage = index === 0;
@@ -18,12 +18,16 @@ function Slider(props) {
     return (
         <>
             <img src={props.destination.pictures[index]} className="lieu1" alt="lieu1" />
-            {/* Faire avancer le compteur d'images et défiler les images en cliquant sur les flèches */}
-            <div className="counter">{index+1} / {props.nbPictures}</div>
-            <img src={flecheG} alt="flèche gauche" className="arrow arrow_left" onClick={goToPrevious} />
-            <img src={flecheD} alt="flèche droite" className="arrow arrow_right" onClick={goToNext} />
+            {(props.nbPictures>1) ? 
+                <>
+                    <div className="counter">{index+1} / {props.nbPictures}</div>
+                    {/* Si il n'y a qu'une seule image, ne pas afficher les flèches. */}
+                    <img src={flecheG} alt="flèche gauche" className="arrow arrow_left" onClick={goToPrevious} />
+                    <img src={flecheD} alt="flèche droite" className="arrow arrow_right" onClick={goToNext} />
+                </> 
+            : null}
         </>
      )
 }
 
-export default Slider;
+export default Slideshow ;
