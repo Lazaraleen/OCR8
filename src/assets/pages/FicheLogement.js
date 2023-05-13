@@ -38,7 +38,7 @@ function SectionLogement1() {
                     {tags.map((detail, index) => {
                         return (
                             <div>
-                                <p key={index}>{detail}</p> 
+                                <p key={destination[0].id+index}>{detail}</p> 
                             </div>
                         )
                     })}

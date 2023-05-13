@@ -1,5 +1,5 @@
 .mainlogement {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     color: var(--main);
 }
@@ -70,9 +70,10 @@ article h2 {
 }
 
 .filtre div {
-    min-width: 115px;
+    /* min-width: 115px; */
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--main);
     font-weight: 500;
     border-radius: 10px;
@@ -165,4 +166,109 @@ span div{
 .section2 article div:nth-child(2) p {
     padding: 0 20px;
     font-weight: 400;
+}
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px) {
+
+    .filtre {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        margin: 10px 0;
+    }
+
+    .filtre div {
+        margin-bottom: 0;
+    }
+
+    .lieu1 {
+        height: 300px;
+    }
+
+    .arrow {
+        height: 50px;
+    }
+    
+    .arrow_right{
+        top: 50%;
+    }
+
+    .arrow_left{
+        top: 50%;
+    }
+
+    article h2 {
+        font-size: 27px;
+    }
+}
+
+
+/* *****************************************  Mode téléphone  ***************************************** */
+
+@media screen and (max-width: 768px) {
+
+    .lieu1 {
+        height: 225px;
+    }
+
+    .arrow {
+        height: 20px;
+    }
+
+    article h2 {
+        font-size: 18px;
+    }
+
+    .filtre {
+        margin-top: 10px;
+    }
+
+    .filtre div {
+        min-width: 80px;
+        padding: 3px 5px;
+        margin-top: 0px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .section1 .article1 {
+        width: 100%;
+    }    
+    
+    .section1 .article2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .section2 article {
+        width: 100%;
+    }
+
+    .section2 {
+        margin: 0 auto;
+        margin-top: 30px;
+        gap: 60px;
+        width: 90%;
+    }
+
+    .section2 article div:nth-child(2) p {
+        font-size: 12px;
+    }
+
+    .section2 article span p {
+        font-size: 13px;
+    }
+
+    .star {
+        margin-top: 0;
+    }
 }

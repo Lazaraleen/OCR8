@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import '../../style/Main404.css';
 
 function Message() {
@@ -11,9 +12,11 @@ function Message() {
 }
 
 function Lien() {
-    return (
+    return (        
         <div className='lien'>
-            <a href='./Home.js'>Retourner sur la page d’accueil</a>
+            <NavLink to="/">
+                <p className="lienAccueil">Retourner sur la page d’accueil</p>
+            </NavLink>
         </div>
     )
 }

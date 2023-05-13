@@ -1,5 +1,5 @@
 .mainAbout {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     color: var(--main);
 }
@@ -95,4 +95,44 @@ button{
     align-items: center;
     background-color: transparent;
     border: none;
+}
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px) {
+
+    .spantitle {
+        height: 40px;
+    }
+
+    .spantitle p {
+        font-size: 18px;
+    }
+
+}
+
+
+/* *****************************************  Mode téléphone  ***************************************** */
+
+@media screen and (max-width: 768px) {
+    .lieu2 {
+        border-radius: 10px;
+    }
+
+    .sectionAbout{
+        padding-top: 20px;
+    }
+
+    .sectionAbout article {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .spantitle {
+        height: 30px;
+    }
+
+    .spantitle p {
+        font-size: 13px;
+    }
 }

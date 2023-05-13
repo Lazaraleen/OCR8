@@ -16,6 +16,7 @@ h6 {
 h2 {
     font-size: 36px;
     padding-bottom: 180px;
+    text-align: center;
 }
 
 .lien {
@@ -28,4 +29,41 @@ h2 {
 
 a {
     color: var(--main);
+}
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px) {
+    h6 {
+        font-size: 180px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+}
+
+
+/* *****************************************  Mode téléphone  ***************************************** */
+
+@media screen and (max-width: 768px) {
+    h6 {
+        font-size: 99px;
+        padding-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+        width: 70vw;
+        padding-bottom: 130px;
+    }
+
+    a {
+        font-size: 14px;
+    }
 }
