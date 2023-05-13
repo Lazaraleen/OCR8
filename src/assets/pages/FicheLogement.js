@@ -31,7 +31,7 @@ function SectionLogement1() {
     return (
         <section className="section1">
             <article className="article1">
-                <h2>{destination[0].title}</h2>
+                <h2 className="droite">{destination[0].title}</h2>
                 <p>{destination[0].location}</p>
 
                 <span className="filtre">

@@ -1,7 +1,8 @@
 .mainlogement {
     width: 90%;
     margin: 0 auto;
-    color: var(--main);
+    color: var(--main);    
+    margin-bottom: 80px;
 }
 
 .miseenavant {
@@ -35,6 +36,10 @@
     border-radius: 25px;
     height: 415px;
     object-fit: cover;
+}
+
+.droite{
+    text-align: start;
 }
 
 section{
@@ -243,7 +248,7 @@ span div{
         width: 100%;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -270,5 +275,10 @@ span div{
 
     .star {
         margin-top: 0;
+    }
+
+    .counter {
+        width: 100%;
+        text-align: center;
     }
 }
