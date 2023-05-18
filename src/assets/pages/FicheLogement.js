@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { useParams } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 // import { useEffect } from "react";
 import RatingStars from "../../components/RatingStar";
 import Slideshow  from "../../components/Slideshow ";
-import flecheD from '../images/rightArrow.png';
-import flecheG from '../images/leftArrow.png';
+// import flecheD from '../images/rightArrow.png';
+// import flecheG from '../images/leftArrow.png';
 import Logement from '../../logements.json';
+import Collapse from "../../components/Collapse";
 import '../../style/MainLogement.css';
 
 
@@ -61,20 +62,25 @@ function SectionLogement2() {
     const {id} = useParams()
     const destination = Logement.filter((lieu) => lieu.id === id);
     const equipement = destination[0].equipments;
-    const [open, setOpen] = useState(false);
-    const [open2, setOpen2] = useState(false);
-    // Prévoir de faire un component Collapse
+    // const [open, setOpen] = useState(false);
+    // const [open2, setOpen2] = useState(false);
     return (
         <section className="section2">
             <article>
-                <span onClick={() => {setOpen(!open)}}>
+                <Collapse title="Description" texte={destination[0].description} i={destination[0].description} />
+                {/* <span onClick={() => {setOpen(!open)}}>
                     <p>Description</p>
                     <img src={open ? flecheG : flecheD} alt="flèche" />
                 </span>
-                {open && <div><p>{destination[0].description}</p> </div>}             
+                {open && <div><p>{destination[0].description}</p> </div>}              */}
             </article>
             <article>
-                <span onClick={() => {setOpen2(!open2)}}>
+                <Collapse title="Équipements" texte={equipement.map((detail, index) => {
+                            return (
+                                <p key={index}>{detail}</p>  
+                            )
+                        })} i={destination[0].description} />
+                {/* <span onClick={() => {setOpen2(!open2)}}>
                     <p>Équipements</p>
                     <img src={open ? flecheG : flecheD} alt="flèche" />
                 </span>
@@ -86,7 +92,7 @@ function SectionLogement2() {
                             )
                         })}
                     </div>
-                }
+                } */}
             </article>
         </section>
     )

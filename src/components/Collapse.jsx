@@ -14,11 +14,11 @@ function Collapse(props) {
     return (
         <>
         <span className="spantitle" onClick={() => toggle(props.i)}>
-            <p>{props.item.title}</p>
+            <p>{props.title}</p>
             <img src={selected === props.i ? flecheG : flecheD} alt="flèche" />
         </span>
         <div className={selected === props.i ? 'texte show' : 'texte'}>
-            <p>{props.item.texte}</p>                    
+            <p>{props.texte}</p>                    
         </div>
         </>
     )
