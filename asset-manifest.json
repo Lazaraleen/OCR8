@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/OCR8/static/css/main.4e915917.css",
+    "main.js": "/OCR8/static/js/main.2ff32a2e.js",
+    "static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png": "/OCR8/static/media/kalen-emsley-Bkci_8qcdvQ-unsplash 2.dc7a08e1faa2e14de0bd.png",
+    "static/media/Falaise.png": "/OCR8/static/media/Falaise.1168be13650bb18b456e.png",
+    "index.html": "/OCR8/index.html",
+    "main.4e915917.css.map": "/OCR8/static/css/main.4e915917.css.map",
+    "main.2ff32a2e.js.map": "/OCR8/static/js/main.2ff32a2e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e915917.css",
+    "static/js/main.2ff32a2e.js"
+  ]
+}
