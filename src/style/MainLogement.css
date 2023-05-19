@@ -75,7 +75,6 @@ article h2 {
 }
 
 .filtre div {
-    /* min-width: 115px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +130,7 @@ span div{
     position: relative;
 }
 
-.section2 article span {
+.section2 article .spantitle {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -145,6 +144,14 @@ span div{
 
 .section2 article span p {
     padding-left: 20px;
+}
+
+.spanP {
+    flex-direction: column;
+}
+
+.spanP p {
+    font-size: 24px;
 }
 
 .section2 span img {

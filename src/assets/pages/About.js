@@ -30,7 +30,7 @@ function SectionAbout() {
     return (
         <section className="sectionAbout">
             {aboutsection.map((item, i) => (
-                <article>
+                <article key={i+'A'}>
                     <Collapse title={item.title} texte={item.texte} i={i} />
                 </article>
             ))}

@@ -5,7 +5,6 @@ import starinactive from '../assets/images/star-inactive.png';
 // Vérifier cette histoire de props !!!
 function RatingStars(props) {
 const rating = props.props;
-console.log(props.props);
 return (  <span className="star">
                 <img src={staractive}  alt="star" />  
                 <img src={rating >= 2 ? staractive : starinactive} alt="star" />
