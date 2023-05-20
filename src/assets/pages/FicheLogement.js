@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
@@ -7,7 +7,6 @@ import Slideshow  from "../../components/Slideshow ";
 import Logement from '../../logements.json';
 import Collapse from "../../components/Collapse";
 import '../../style/MainLogement.css';
-import Page404 from './Page404';
 
 
 function FicheLogement() {  

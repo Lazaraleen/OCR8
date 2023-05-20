@@ -1,6 +1,6 @@
 import React from "react";
 import Montagne from '../images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
-import MiseEnAvant from "../../components/MiseEnAvant";
+import Banner from "../../components/Banner";
 import Collapse from "../../components/Collapse";
 import '../../style/About.css';
 
@@ -24,25 +24,17 @@ const aboutsection = [
 ]
 
 
-function SectionAbout() {
-
-
-    return (
-        <section className="sectionAbout">
-            {aboutsection.map((item, i) => (
-                <article key={i+'A'}>
-                    <Collapse title={item.title} texte={item.texte} i={i} />
-                </article>
-            ))}
-        </section>
-    )
-}
-
 function About() {
     return (
         <div className='mainAbout'>
-            <MiseEnAvant image={Montagne} namealt="lieu2" />
-            <SectionAbout />
+            <Banner image={Montagne} namealt="lieu2" />
+            <section className="sectionAbout">
+                {aboutsection.map((item, i) => (
+                    <article key={i+'A'}>
+                        <Collapse title={item.title} texte={item.texte} i={i} />
+                    </article>
+                ))}
+            </section>
         </div>
     )
 }

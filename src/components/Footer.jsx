@@ -1,5 +1,4 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import logoblanc from '../assets/images/LOGOblanc.png';
 import '../style/Footer.css';
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function MiseEnAvant(props) {
+function Banner(props) {
     return (
         <div className='miseenavant'>
             <img src={props.image} className={props.namealt} alt={props.namealt} />
@@ -10,4 +10,4 @@ function MiseEnAvant(props) {
     )
 }
 
-export default MiseEnAvant;
+export default Banner;

@@ -13,13 +13,13 @@ function Collapse(props) {
     }
     return (
         <>
-        <span className="spantitle" onClick={() => toggle(props.i)}>
-            <span className="spanP">{props.title}</span>
-            <img src={selected === props.i ? flecheG : flecheD} alt="flèche" />
-        </span>
-        <div className={selected === props.i ? 'texte show' : 'texte'}>
-            <span className="spanP">{props.texte}</span>                    
-        </div>
+            <span className="spantitle" onClick={() => toggle(props.i)}>
+                <span className="spanP">{props.title}</span>
+                <img src={selected === props.i ? flecheG : flecheD} alt="flèche" />
+            </span>
+            <div className={selected === props.i ? 'texte show' : 'texte'}>
+                <span className="spanP">{props.texte}</span>                    
+            </div>
         </>
     )
 }

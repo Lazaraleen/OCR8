@@ -21,9 +21,9 @@ function Slideshow (props) {
             {(props.nbPictures>1) ? 
                 <>
                     <div className="counter">{index+1} / {props.nbPictures}</div>
-                    {/* Si il n'y a qu'une seule image, ne pas afficher les flèches. */}
                     <img src={flecheG} alt="flèche gauche" className="arrow arrow_left" onClick={goToPrevious} />
                     <img src={flecheD} alt="flèche droite" className="arrow arrow_right" onClick={goToNext} />
+                    {/* Sinon si il n'y a qu'une seule image, ne pas afficher les flèches. */}
                 </> 
             : null}
         </>
