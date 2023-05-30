@@ -2,11 +2,11 @@ import React from "react";
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
-import RatingStars from "../../components/RatingStar";
-import Slideshow  from "../../components/Slideshow ";
-import Logement from '../../logements.json';
-import Collapse from "../../components/Collapse";
-import '../../style/MainLogement.css';
+import RatingStars from "../components/RatingStar";
+import Slideshow  from "../components/Slideshow ";
+import Logement from '../logements.json';
+import Collapse from "../components/Collapse";
+import '../style/MainLogement.css';
 
 
 function FicheLogement() {  
@@ -48,7 +48,9 @@ function FicheLogement() {
                     <div className="name">
                         <p>{destination.length > 0 && destination[0].host.name}</p>
                     </div>
-                    <div><img src={destination.length > 0 ? destination[0].host.picture : null} className="avatar" alt="avatar" /></div>
+                    <div>
+                        <img src={destination.length > 0 ? destination[0].host.picture : null} className="avatar" alt="avatar" />
+                    </div>
                 </span>
                 <RatingStars props={destination.length > 0 && destination[0].rating} />
             </article>

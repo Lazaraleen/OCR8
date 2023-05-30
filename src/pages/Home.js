@@ -1,8 +1,8 @@
 import React from "react";
-import falaise from '../images/Falaise.png';
-import Banner from "../../components/Banner";
-import Card from "../../components/Card";
-import '../../style/MainHome.css';
+import falaise from '../assets/images/Falaise.png';
+import Banner from "../components/Banner";
+import Card from "../components/Card";
+import '../style/MainHome.css';
 
 
 function Home() {

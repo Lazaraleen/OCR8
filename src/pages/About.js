@@ -1,8 +1,8 @@
 import React from "react";
-import Montagne from '../images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
-import Banner from "../../components/Banner";
-import Collapse from "../../components/Collapse";
-import '../../style/About.css';
+import Montagne from '../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
+import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
+import '../style/About.css';
 
 const aboutsection = [
     {

@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import '../style/App.css';
-import Home from '../assets/pages/Home';
-import About from '../assets/pages/About';
-import FicheLogement from '../assets/pages/FicheLogement';
-import Page404 from '../assets/pages/Page404';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import FicheLogement from '../pages/FicheLogement';
+import Page404 from '../pages/Page404';
 
 function RoutesReact() {
   return (

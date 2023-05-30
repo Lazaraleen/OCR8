@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import '../../style/Main404.css';
+import '../style/Main404.css';
 
 function Page404() {
     return (

@@ -24,6 +24,11 @@ ul a {
     font-weight: 500;
 }
 
+ul a.active {
+    border-bottom: 2px solid var(--main);
+    
+}
+
 
 /* *****************************************  Mode tablette  ***************************************** */
 
